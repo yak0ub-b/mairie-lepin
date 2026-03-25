@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Contact — Mairie de Le Pin (77)</title>
+  <meta name="description" content="Contactez la Mairie de Le Pin : adresse, téléphone, formulaire de contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="brand-logo-img" />
+        <div>
+          <div class="brand-text-main">Mairie de Le Pin</div>
+          <div class="brand-text-sub">Seine-et-Marne • 77181</div>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="decouvrir.html">Découvrir</a></li>
+        <li><a href="mairie.html">La Mairie</a></li>
+        <li><a href="vie-pratique.html">Vie pratique</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Accueil</a>
+    <a href="decouvrir.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Découvrir le village</a>
+    <a href="mairie.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/><line x1="9" y1="22" x2="9" y2="14"/><line x1="15" y1="22" x2="15" y2="14"/><rect x="9" y="14" width="6" height="8"/></svg> La Mairie</a>
+    <a href="vie-pratique.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg> Vie pratique</a>
+    <a href="contact.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-hero-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>Contact</span>
+      </nav>
+      <h1>Nous contacter</h1>
+      <p>La mairie est à votre écoute pour toutes vos questions et démarches</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Infos contact -->
+        <div class="contact-info-card">
+          <h3>Mairie de Le Pin</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div>
+              <div class="contact-detail-label">Adresse</div>
+              <div class="contact-detail-value">6 rue de Courtry<br>77181 Le Pin</div>
+              <a href="#communeMap" class="map-btn map-btn--light">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Voir sur la carte
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div>
+              <div class="contact-detail-label">Téléphone</div>
+              <div class="contact-detail-value">
+                <a href="tel:+33160262209" style="color:var(--color-white);">01 60 26 22 09</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div>
+              <div class="contact-detail-label">Horaires d'ouverture</div>
+              <div class="contact-detail-value">À confirmer avec la mairie</div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.12);">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.6; margin-bottom:1rem;">Réseaux sociaux</div>
+            <div style="display:flex; gap:0.75rem;">
+              <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener"
+                style="background:rgba(255,255,255,0.1); color:white; padding:0.6rem 1.1rem; border-radius:8px; font-size:0.875rem; font-weight:600; transition:background 0.2s;">
+                📘 Facebook
+              </a>
+              <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener"
+                style="background:rgba(255,255,255,0.1); color:white; padding:0.6rem 1.1rem; border-radius:8px; font-size:0.875rem; font-weight:600; transition:background 0.2s;">
+                📷 Instagram
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.12);">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.6; margin-bottom:1rem;">Urgences</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+              <div style="text-align:center; background:rgba(255,255,255,0.06); border-radius:8px; padding:0.75rem 0.5rem;">
+                <div style="font-size:1.3rem; margin-bottom:0.25rem;">🚒</div>
+                <div style="font-size:1.1rem; font-weight:700;">18</div>
+                <div style="font-size:0.7rem; opacity:0.65;">Pompiers</div>
+              </div>
+              <div style="text-align:center; background:rgba(255,255,255,0.06); border-radius:8px; padding:0.75rem 0.5rem;">
+                <div style="font-size:1.3rem; margin-bottom:0.25rem;">🚓</div>
+                <div style="font-size:1.1rem; font-weight:700;">17</div>
+                <div style="font-size:0.7rem; opacity:0.65;">Police</div>
+              </div>
+              <div style="text-align:center; background:rgba(255,255,255,0.06); border-radius:8px; padding:0.75rem 0.5rem;">
+                <div style="font-size:1.3rem; margin-bottom:0.25rem;">🚑</div>
+                <div style="font-size:1.1rem; font-weight:700;">15</div>
+                <div style="font-size:0.7rem; opacity:0.65;">SAMU</div>
+              </div>
+              <div style="text-align:center; background:rgba(255,255,255,0.06); border-radius:8px; padding:0.75rem 0.5rem;">
+                <div style="font-size:1.3rem; margin-bottom:0.25rem;">🆘</div>
+                <div style="font-size:1.1rem; font-weight:700;">112</div>
+                <div style="font-size:0.7rem; opacity:0.65;">Urgences EU</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form-card">
+          <h3>Envoyez-nous un message</h3>
+          <form name="contact" action="/merci.html" method="post" data-netlify="true" novalidate>
+            <input type="hidden" name="form-name" value="contact" />
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet">
+                <option value="">Sélectionnez un sujet...</option>
+                <option>Démarche administrative</option>
+                <option>Urbanisme / PLU</option>
+                <option>École / Enfance</option>
+                <option>Associations</option>
+                <option>Voirie / Environnement</option>
+                <option>Autre demande</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:0.9rem;">
+              Envoyer le message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CARTE INTERACTIVE
+       ============================================================ -->
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nous trouver</h2>
+        <p>La mairie de Le Pin est facilement accessible depuis Chelles, Courtry et Claye-Souilly.</p>
+      </div>
+    </div>
+    <div class="map-outer">
+      <div id="communeMap" aria-label="Carte de la commune de Le Pin"></div>
+      <div class="map-legend" aria-label="Légende de la carte">
+        <div class="map-legend-item">
+          <span class="map-legend-dot map-dot-main"></span>
+          <span>Mairie de Le Pin</span>
+        </div>
+        <div class="map-legend-item">
+          <span class="map-legend-dot map-dot-sec"></span>
+          <span>École Étienne Martin</span>
+        </div>
+        <div class="map-legend-item">
+          <span class="map-legend-dot map-dot-sec"></span>
+          <span>Grand Parc</span>
+        </div>
+        <div class="map-legend-item">
+          <span class="map-legend-dot map-dot-sec"></span>
+          <span>Salle des fêtes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="footer-logo-img" />
+            <div>
+              <div style="font-size:1rem; font-weight:700;">Mairie de Le Pin</div>
+              <div style="font-size:0.75rem; opacity:0.6; margin-top:2px;">Seine-et-Marne · 77181</div>
+            </div>
+          </div>
+          <p class="footer-desc">La commune de Le Pin, 1 642 habitants en Seine-et-Marne, Île-de-France.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener" aria-label="Facebook"><span>f</span></a>
+            <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener" aria-label="Instagram"><span>📷</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="decouvrir.html">Découvrir le village</a></li>
+            <li><a href="mairie.html">La Mairie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><a href="#communeMap" class="footer-map-link">6 rue de Courtry<br>77181 Le Pin</a></div>
+          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+33160262209" style="color:rgba(255,255,255,0.65);">01 60 26 22 09</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mairie de Le Pin · Tous droits réservés</p>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Accessibilité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WPeE=" crossorigin=""></script>
+  <script>
+  (function () {
+    var mapEl = document.getElementById('communeMap');
+    if (!mapEl) return;
+
+    /* ---- Carte centrée sur la mairie ---- */
+    var map = L.map('communeMap', {
+      center: [48.9118, 2.6341],
+      zoom: 15,
+      scrollWheelZoom: false,
+      zoomControl: true
+    });
+
+    /* ---- Fond de carte CartoDB Voyager (sobre et lisible) ---- */
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(map);
+
+    /* ---- Marqueurs personnalisés ---- */
+    function pinIcon(color, size) {
+      size = size || 14;
+      return L.divIcon({
+        className: '',
+        html: '<div style="width:' + size + 'px;height:' + size + 'px;background:' + color + ';border:3px solid #fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.35);"></div>',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -(size / 2 + 6)]
+      });
+    }
+
+    /* Style popup */
+    var popupOpts = { className: 'map-popup', maxWidth: 220 };
+
+    /* Mairie (marqueur principal — plus grand) */
+    L.marker([48.9118, 2.6341], { icon: pinIcon('#d4722a', 18) })
+      .addTo(map)
+      .bindPopup(
+        '<div class="mp-title">Mairie de Le Pin</div>' +
+        '<div class="mp-body">6 rue de Courtry — 77181 Le Pin<br>' +
+        '<a href="tel:+33160262209">01 60 26 22 09</a></div>' +
+        '<a class="mp-link" href="https://www.google.fr/maps/dir//6+rue+de+Courtry,+77181+Le+Pin" target="_blank" rel="noopener">Itinéraire →</a>',
+        popupOpts
+      )
+      .openPopup();
+
+    /* École */
+    L.marker([48.9132, 2.6355], { icon: pinIcon('#6e2e0e') })
+      .addTo(map)
+      .bindPopup(
+        '<div class="mp-title">École Étienne Martin</div>' +
+        '<div class="mp-body">Le Pin, 77181</div>' +
+        '<a class="mp-link" href="https://mairiedelepin.fr/horaires-de-lecole-etienne-martin/" target="_blank" rel="noopener">Horaires & infos →</a>',
+        popupOpts
+      );
+
+    /* Grand Parc */
+    L.marker([48.9108, 2.6370], { icon: pinIcon('#6e2e0e') })
+      .addTo(map)
+      .bindPopup(
+        '<div class="mp-title">Grand Parc</div>' +
+        '<div class="mp-body">Espace vert municipal — Le Pin</div>',
+        popupOpts
+      );
+
+    /* Salle des fêtes */
+    L.marker([48.9122, 2.6318], { icon: pinIcon('#6e2e0e') })
+      .addTo(map)
+      .bindPopup(
+        '<div class="mp-title">Salle des fêtes</div>' +
+        '<div class="mp-body">Le Pin, 77181<br>Location : contacter la mairie</div>' +
+        '<a class="mp-link" href="contact.html">Nous contacter →</a>',
+        popupOpts
+      );
+  })();
+  </script>
+</body>
+</html>

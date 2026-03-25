@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Mairie de Le Pin — Seine-et-Marne (77)</title>
+  <meta name="description" content="Bienvenue sur le site officiel de la Mairie de Le Pin, commune de 1 642 habitants en Seine-et-Marne, Île-de-France." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png"
+             alt="Écusson Mairie de Le Pin" class="brand-logo-img" />
+        <div>
+          <div class="brand-text-main">Mairie de Le Pin</div>
+          <div class="brand-text-sub">Seine-et-Marne • 77181</div>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="decouvrir.html">Découvrir</a></li>
+        <li><a href="mairie.html">La Mairie</a></li>
+        <li><a href="vie-pratique.html">Vie pratique</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="search-toggle" id="searchToggle" aria-label="Rechercher sur le site" aria-expanded="false" title="Rechercher">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Barre de recherche dépliante -->
+  <div class="search-dropdown" id="searchDropdown" aria-hidden="true">
+    <div class="container">
+      <form class="search-form" id="searchForm" autocomplete="off">
+        <input type="search" placeholder="Naviguer sur le site… (ex : école, mairie, agenda)" class="search-input" id="searchInput" autocomplete="off" aria-label="Champ de recherche" aria-expanded="false" aria-owns="searchResults" role="combobox">
+        <button type="submit" class="search-submit" aria-label="Lancer la recherche">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <div id="searchResults" class="search-results" role="listbox"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Menu mobile">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Accueil</a>
+    <a href="decouvrir.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Découvrir le village</a>
+    <a href="mairie.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/><line x1="9" y1="22" x2="9" y2="14"/><line x1="15" y1="22" x2="15" y2="14"/><rect x="9" y="14" width="6" height="8"/></svg> La Mairie</a>
+    <a href="vie-pratique.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg> Vie pratique</a>
+    <a href="contact.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> Contact</a>
+    <div class="mobile-search">
+      <form class="search-form" action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
+        <input type="hidden" name="sitesearch" value="mairiedelepin.fr">
+        <input type="search" name="q" placeholder="Rechercher…" class="search-input search-input--mobile" autocomplete="off" aria-label="Rechercher sur le site">
+        <button type="submit" class="search-submit" aria-label="Lancer la recherche">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO — Slideshow Ken Burns
+       ============================================================ -->
+  <section class="hero" aria-label="Bienvenue">
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/3a69b700bbf41f77d654eca86e8272a0/Grand-Parc-.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/fb78b4d4d4580bea9deecf990faa1c37/Entrée-Chelles6.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/bb0370c9b183e9774afb51b168d603f9/IMG_20200116_114114.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/8b757f245dce2fe064f0bc5ebb91dde2/Entrée-Courtry.jpg')"></div>
+    </div>
+    <div class="hero-overlay" role="presentation"></div>
+    <div class="container">
+      <div class="hero-content">
+        <a href="contact.html#communeMap" class="hero-eyebrow" aria-label="Voir Le Pin sur la carte">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.3rem"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Le Pin, Seine-et-Marne
+        </a>
+        <h1 class="hero-title">
+          Bienvenue à<br><span>Le Pin</span>
+        </h1>
+        <p class="hero-desc">
+          Commune de 1 642 habitants en Île-de-France. Retrouvez toutes les informations municipales, actualités et services de votre commune.
+        </p>
+        <div class="hero-actions">
+          <a href="decouvrir.html" class="btn btn-primary">
+            Découvrir notre commune →
+          </a>
+          <a href="contact.html" class="btn btn-white">
+            Contacter la mairie
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BANDEAU PRESSE
+       ============================================================ -->
+  <div class="press-band" role="complementary" aria-label="Presse et références">
+    <div class="press-band-header">Vu dans la presse &amp; références institutionnelles</div>
+    <div class="press-track-wrap">
+      <div class="press-track" aria-hidden="true">
+        <!-- BLOC 1 -->
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2"/><path d="M6 2v4H2v14a2 2 0 002 2h4"/><line x1="12" y1="11" x2="18" y2="11"/><line x1="12" y1="15" x2="18" y2="15"/></svg>Le Parisien 77</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>actu.fr / Seine-et-Marne</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/></svg>seine-et-marne.fr</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg>Île-de-France Mobilités</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>service-public.fr</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2"/><path d="M6 2v4H2v14a2 2 0 002 2h4"/><line x1="12" y1="11" x2="18" y2="11"/><line x1="12" y1="15" x2="18" y2="15"/></svg>La Marne · Hebdo local</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Grand Paris Grand Est</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>Wikipedia — Le Pin (Seine-et-Marne)</span>
+        <span class="press-sep"></span>
+        <!-- BLOC 2 (duplicate pour la boucle seamless) -->
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2"/><path d="M6 2v4H2v14a2 2 0 002 2h4"/><line x1="12" y1="11" x2="18" y2="11"/><line x1="12" y1="15" x2="18" y2="15"/></svg>Le Parisien 77</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>actu.fr / Seine-et-Marne</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/></svg>seine-et-marne.fr</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg>Île-de-France Mobilités</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>service-public.fr</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2"/><path d="M6 2v4H2v14a2 2 0 002 2h4"/><line x1="12" y1="11" x2="18" y2="11"/><line x1="12" y1="15" x2="18" y2="15"/></svg>La Marne · Hebdo local</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Grand Paris Grand Est</span>
+        <span class="press-sep"></span>
+        <span class="press-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>Wikipedia — Le Pin (Seine-et-Marne)</span>
+        <span class="press-sep"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       VITRINE — Stats grandes + atouts
+       ============================================================ -->
+  <section class="vitrine" aria-labelledby="vitrine-title">
+    <div class="container">
+      <div class="vitrine-grid">
+        <div class="vitrine-stats">
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">1 642</div>
+            <div class="vitrine-stat-label">Habitants<br>Pinois &amp; Pinoises</div>
+          </div>
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">6,7</div>
+            <div class="vitrine-stat-label">km² de<br>superficie</div>
+          </div>
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">~20</div>
+            <div class="vitrine-stat-label">km de<br>Paris</div>
+          </div>
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">10+</div>
+            <div class="vitrine-stat-label">Associations<br>actives</div>
+          </div>
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">2</div>
+            <div class="vitrine-stat-label">Grands parcs<br>naturels</div>
+          </div>
+          <div class="vitrine-stat">
+            <div class="vitrine-stat-num">77</div>
+            <div class="vitrine-stat-label">Seine-et-Marne<br>Île-de-France</div>
+          </div>
+        </div>
+        <div class="vitrine-content">
+          <span class="tag">Notre commune</span>
+          <h2 class="section-title" id="vitrine-title">Le Pin, une commune qui vous ressemble</h2>
+          <ul class="vitrine-atouts">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg>
+              Cadre de vie verdoyant avec le Grand Parc et le Petit Parc
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              École primaire publique Étienne Martin au cœur du village
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              Vie associative sportive et culturelle très active
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/></svg>
+              Proche de Chelles, Villeparisis et de l'aéroport Paris-CDG
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Commune calme et sécurisée, idéale pour les familles
+            </li>
+          </ul>
+          <a href="decouvrir.html" class="btn btn-primary">Découvrir Le Pin →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TICKER ASSOCIATIONS SPORTIVES & CULTURELLES
+       ============================================================ -->
+  <div class="assoc-ticker" role="complementary" aria-label="Associations de Le Pin">
+    <div class="assoc-track-wrap">
+      <div class="assoc-track" aria-hidden="true">
+        <!-- BLOC 1 -->
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> AS Le Pin Football</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg> Tennis Club du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Judo Club Pinois</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Comité des Fêtes du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> APE École Étienne Martin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg> Pétanque Club du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Club des Aînés Pinois</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Association Culturelle du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Gym Douce &amp; Bien-être</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Les Amis du Village</span>
+        <span class="assoc-dot"></span>
+        <!-- BLOC 2 (duplicate pour la boucle seamless) -->
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> AS Le Pin Football</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg> Tennis Club du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Judo Club Pinois</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Comité des Fêtes du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> APE École Étienne Martin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg> Pétanque Club du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Club des Aînés Pinois</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg> Association Culturelle du Pin</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> Gym Douce &amp; Bien-être</span>
+        <span class="assoc-dot"></span>
+        <span class="assoc-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Les Amis du Village</span>
+        <span class="assoc-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       VILLAGE EN IMAGES
+       ============================================================ -->
+  <section class="village-strip" aria-label="Photos du village de Le Pin">
+    <div class="village-grid">
+      <div class="village-photo" data-label="Grand Parc">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/3a69b700bbf41f77d654eca86e8272a0/Grand-Parc-.jpg')"></div>
+      </div>
+      <div class="village-photo" data-label="Petit Parc">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/0fbef58722804aad3b2f0fc140300f6f/Petit-Parc.jpg')"></div>
+      </div>
+      <div class="village-photo" data-label="Entrée Chelles">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/fb78b4d4d4580bea9deecf990faa1c37/Entrée-Chelles6.jpg')"></div>
+      </div>
+      <div class="village-photo" data-label="Entrée Courtry">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/8b757f245dce2fe064f0bc5ebb91dde2/Entrée-Courtry.jpg')"></div>
+      </div>
+      <div class="village-photo" data-label="Le Pin">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/bb0370c9b183e9774afb51b168d603f9/IMG_20200116_114114.jpg')"></div>
+      </div>
+      <div class="village-photo" data-label="Le Pin en été">
+        <div class="vp-bg" style="background-image:url('https://mairiedelepin.fr/wp-content/uploads/resized/4c2239c506407b16d9be7934cb4218c7/IMG_20200724_174948.jpg')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACCÈS RAPIDES
+       ============================================================ -->
+  <section class="quick-access" aria-labelledby="quick-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag" style="background:rgba(255,255,255,0.15); color:rgba(255,255,255,0.9);">Services</span>
+        <h2 class="section-title" id="quick-title">Accès rapides</h2>
+        <p class="section-subtitle">Les informations les plus demandées en un clic</p>
+      </div>
+      <div class="quick-grid">
+        <a href="vie-pratique.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <div class="quick-card-label">Démarches administratives</div>
+        </a>
+        <a href="vie-pratique.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div class="quick-card-label">École Étienne Martin</div>
+        </a>
+        <a href="decouvrir.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="quick-card-label">Associations</div>
+        </a>
+        <a href="vie-pratique.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div class="quick-card-label">Agenda communal</div>
+        </a>
+        <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener" class="quick-card">
+          <div class="quick-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></div>
+          <div class="quick-card-label">Page Facebook</div>
+        </a>
+        <a href="mairie.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div>
+          <div class="quick-card-label">Lettres d'information</div>
+        </a>
+        <a href="decouvrir.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div class="quick-card-label">Livret d'accueil</div>
+        </a>
+        <a href="vie-pratique.html" class="quick-card">
+          <div class="quick-card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg></div>
+          <div class="quick-card-label">Environnement</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACTUALITÉS
+       ============================================================ -->
+  <section aria-labelledby="news-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Actualités</span>
+        <h2 class="section-title" id="news-title">Dernières nouvelles</h2>
+        <p class="section-subtitle">Restez informés de la vie de notre commune</p>
+      </div>
+      <div class="news-grid">
+
+        <article class="news-card">
+          <div class="news-card-img">
+            <img src="https://mairiedelepin.fr/wp-content/uploads/2026/03/Instagram-suivez-nous-225x111.png"
+                 alt="Mairie de Le Pin sur Instagram" loading="lazy" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">Décembre 2025</div>
+            <h3 class="news-card-title">Nouvel outil de communication : Instagram</h3>
+            <p class="news-card-excerpt">La mairie de Le Pin rejoint Instagram ! Suivez-nous pour découvrir la vie de la commune en images et restez connectés aux dernières actualités.</p>
+            <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener" class="news-card-link">
+              Nous suivre <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-img">
+            <img src="https://mairiedelepin.fr/wp-content/uploads/2026/03/40-bien-choisir-son-promeneur-de-chiens-368x262.jpg"
+                 alt="Itinéraires de promenades canines à Le Pin" loading="lazy" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">Novembre 2025</div>
+            <h3 class="news-card-title">Itinéraires de promenades canines</h3>
+            <p class="news-card-excerpt">De nouveaux itinéraires de promenades sont disponibles pour vous et vos compagnons à quatre pattes. Profitez des espaces verts de Le Pin dans le respect de tous.</p>
+            <a href="vie-pratique.html" class="news-card-link">
+              En savoir plus <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-card-img">
+            <img src="https://mairiedelepin.fr/wp-content/uploads/2018/02/chat-errant-2-1000x750-368x262.jpg"
+                 alt="Campagne de stérilisation des chats errants" loading="lazy" />
+          </div>
+          <div class="news-card-body">
+            <div class="news-card-date">Octobre 2025</div>
+            <h3 class="news-card-title">Campagne de stérilisation des chats errants</h3>
+            <p class="news-card-excerpt">La commune lance une campagne de stérilisation pour les chats errants. Cette initiative vise à réguler la population féline de manière humaine et durable.</p>
+            <a href="vie-pratique.html" class="news-card-link">
+              En savoir plus <span>→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="mairie.html" class="btn btn-outline">Voir toutes les actualités</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BANDEAU PARALLAX
+       ============================================================ -->
+  <div class="parallax-band" aria-hidden="true">
+    <div class="parallax-band-inner"></div>
+    <div class="parallax-band-text">Le Pin — Seine-et-Marne · 77181</div>
+  </div>
+
+  <!-- ============================================================
+       AGENDA
+       ============================================================ -->
+  <section class="section-alt" aria-labelledby="agenda-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Agenda</span>
+        <h2 class="section-title" id="agenda-title">Prochains événements</h2>
+        <p class="section-subtitle">Ne manquez aucun événement à Le Pin</p>
+      </div>
+      <div class="events-list">
+
+        <a href="mairie.html" class="event-item">
+          <div class="event-date-box">
+            <div class="event-date-day">10</div>
+            <div class="event-date-month">Jan.</div>
+          </div>
+          <div class="event-info">
+            <div class="event-title">Vœux du Maire</div>
+            <div class="event-meta">Samedi 10 janvier 2026 · Salle des fêtes de Le Pin</div>
+          </div>
+          <div class="event-arrow">›</div>
+        </a>
+
+        <a href="mairie.html" class="event-item">
+          <div class="event-date-box">
+            <div class="event-date-day">05</div>
+            <div class="event-date-month">Déc.</div>
+          </div>
+          <div class="event-info">
+            <div class="event-title">Animations de Noël</div>
+            <div class="event-meta">Vendredi 5 décembre 2025 · Place de la Mairie</div>
+          </div>
+          <div class="event-arrow">›</div>
+        </a>
+
+        <a href="mairie.html" class="event-item">
+          <div class="event-date-box">
+            <div class="event-date-day">29</div>
+            <div class="event-date-month">Nov.</div>
+          </div>
+          <div class="event-info">
+            <div class="event-title">Soirée Jeux — Téléthon</div>
+            <div class="event-meta">Samedi 29 novembre 2025 · Salle des fêtes</div>
+          </div>
+          <div class="event-arrow">›</div>
+        </a>
+
+      </div>
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="vie-pratique.html" class="btn btn-outline">Voir tout l'agenda</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png"
+                 alt="Écusson Mairie de Le Pin" class="footer-logo-img" />
+            <div>
+              <div style="font-size:1rem; font-weight:700;">Mairie de Le Pin</div>
+              <div style="font-size:0.75rem; opacity:0.6; margin-top:2px;">Seine-et-Marne · 77181</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            La commune de Le Pin est une petite ville de Seine-et-Marne en Île-de-France.
+            Retrouvez ici toutes les informations administratives et de vie locale.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener" aria-label="Facebook">
+              <span>f</span>
+            </a>
+            <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener" aria-label="Instagram">
+              <span>📷</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="decouvrir.html">Découvrir le village</a></li>
+            <li><a href="mairie.html">La Mairie</a></li>
+            <li><a href="vie-pratique.html">Vie pratique</a></li>
+            <li><a href="decouvrir.html">Associations</a></li>
+            <li><a href="vie-pratique.html">Santé</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <a href="contact.html#communeMap" class="footer-map-link">6 rue de Courtry<br>77181 Le Pin</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+33160262209" style="color:rgba(255,255,255,0.65);">01 60 26 22 09</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun–Ven<br>9h00 – 12h00</span>
+          </div>
+          <h4 style="margin-top:1.5rem;">Liens utiles</h4>
+          <ul>
+            <li><a href="https://www.meteofrance.com" target="_blank" rel="noopener">Météo France</a></li>
+            <li><a href="https://www.airparif.asso.fr" target="_blank" rel="noopener">Qualité de l'air</a></li>
+            <li><a href="https://www.transilien.com" target="_blank" rel="noopener">Transilien (SNCF)</a></li>
+            <li><a href="https://www.bison-fute.gouv.fr" target="_blank" rel="noopener">Info trafic</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mairie de Le Pin · Tous droits réservés</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Mentions légales</a>
+          <a href="contact.html">Accessibilité</a>
+          <a href="index.html">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

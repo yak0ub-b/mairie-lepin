@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>La Mairie — Mairie de Le Pin (77)</title>
+  <meta name="description" content="Informations sur la Mairie de Le Pin : équipe municipale, conseil municipal, documents officiels et services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="brand-logo-img" />
+        <div>
+          <div class="brand-text-main">Mairie de Le Pin</div>
+          <div class="brand-text-sub">Seine-et-Marne • 77181</div>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="decouvrir.html">Découvrir</a></li>
+        <li><a href="mairie.html" class="active">La Mairie</a></li>
+        <li><a href="vie-pratique.html">Vie pratique</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Menu mobile">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Accueil</a>
+    <a href="decouvrir.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Découvrir le village</a>
+    <a href="mairie.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/><line x1="9" y1="22" x2="9" y2="14"/><line x1="15" y1="22" x2="15" y2="14"/><rect x="9" y="14" width="6" height="8"/></svg> La Mairie</a>
+    <a href="vie-pratique.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg> Vie pratique</a>
+    <a href="contact.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-hero-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>La Mairie</span>
+      </nav>
+      <h1>La Mairie</h1>
+      <p>Votre équipe municipale et les services de la commune</p>
+    </div>
+  </div>
+
+  <!-- INFOS PRATIQUES -->
+  <section aria-labelledby="infos-title">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+
+        <!-- Horaires & contact -->
+        <div>
+          <span class="tag">Horaires & Contact</span>
+          <h2 class="section-title" id="infos-title">Informations pratiques</h2>
+          <p class="section-subtitle" style="margin-bottom:1.5rem;">La mairie est à votre disposition pour toutes vos démarches administratives</p>
+
+          <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--color-card-shadow);">
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+
+              <div class="contact-detail" style="margin-bottom:0;">
+                <div class="contact-detail-icon" style="background:var(--color-accent-light); color:var(--color-accent);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+                <div>
+                  <div class="contact-detail-label">Adresse</div>
+                  <div class="contact-detail-value" style="color:var(--color-primary);">6 rue de Courtry<br>77181 Le Pin</div>
+                  <a href="contact.html#communeMap" class="map-btn">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    Voir sur la carte
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-detail" style="margin-bottom:0;">
+                <div class="contact-detail-icon" style="background:var(--color-accent-light); color:var(--color-accent);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+                <div>
+                  <div class="contact-detail-label">Téléphone</div>
+                  <div class="contact-detail-value" style="color:var(--color-primary);">
+                    <a href="tel:+33160262209">01 60 26 22 09</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail" style="margin-bottom:0;">
+                <div class="contact-detail-icon" style="background:var(--color-accent-light); color:var(--color-accent);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div>
+                  <div class="contact-detail-label">Horaires d'ouverture</div>
+                  <div class="contact-detail-value" style="color:var(--color-primary);">
+                    À confirmer avec la mairie
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail" style="margin-bottom:0;">
+                <div class="contact-detail-icon" style="background:var(--color-accent-light); color:var(--color-accent);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div>
+                <div>
+                  <div class="contact-detail-label">Contact</div>
+                  <div class="contact-detail-value" style="color:var(--color-primary);">
+                    <a href="contact.html">Formulaire de contact →</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Maire -->
+        <div>
+          <span class="tag">Mot du Maire</span>
+          <h2 class="section-title">Lydie Wallez</h2>
+          <p style="color:var(--color-text-muted); margin-bottom:1.5rem;">Maire de Le Pin</p>
+
+          <div style="background:var(--color-primary); color:var(--color-white); border-radius:var(--radius-lg); padding:2rem; position:relative; overflow:hidden;">
+            <div style="position:absolute; top:-20px; right:-20px; font-size:6rem; opacity:0.06;">🏛️</div>
+            <div style="position:relative;">
+              <div style="font-size:2rem; margin-bottom:1rem; opacity:0.6;">"</div>
+              <p style="color:rgba(255,255,255,0.85); font-style:italic; line-height:1.7; font-size:0.95rem;">
+                Au nom du Conseil Municipal et en mon nom personnel, je vous souhaite la bienvenue sur le site de la commune de Le Pin. Ce site a pour vocation de vous informer sur la vie locale et de faciliter vos démarches administratives.
+              </p>
+              <div style="margin-top:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+                <div style="width:44px; height:44px; border-radius:50%; background:var(--color-accent); display:flex; align-items:center; justify-content:center; font-weight:700;">LW</div>
+                <div>
+                  <div style="font-weight:700; font-size:0.95rem;">Lydie Wallez</div>
+                  <div style="font-size:0.78rem; opacity:0.65;">Maire de Le Pin</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEIL MUNICIPAL -->
+  <section class="section-alt" aria-labelledby="conseil-title">
+    <div class="container">
+      <span class="tag">Élus</span>
+      <h2 class="section-title" id="conseil-title">Conseil Municipal</h2>
+      <p class="section-subtitle">Les élus de la commune au service des Pinois et Pinoises</p>
+
+      <div class="elus-grid">
+
+        <div class="elu-card">
+          <div class="elu-avatar">LW</div>
+          <div class="elu-name">Lydie Wallez</div>
+          <div class="elu-role">Maire</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">1<sup style="font-size:0.6em">er</sup></div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">1er Adjoint</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">2</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">2ème Adjoint</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">3</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">3ème Adjoint</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">🗳️</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">Conseiller municipal</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">🗳️</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">Conseiller municipal</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">🗳️</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">Conseillère municipale</div>
+        </div>
+
+        <div class="elu-card">
+          <div class="elu-avatar">🗳️</div>
+          <div class="elu-name">À compléter</div>
+          <div class="elu-role">Conseillère municipale</div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; margin-top:1.5rem; font-size:0.85rem; color:var(--color-text-muted);">
+        * Les noms des élus seront mis à jour lors de la mise en ligne officielle
+      </p>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS OFFICIELS -->
+  <section aria-labelledby="docs-title">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem;">
+
+        <div>
+          <span class="tag">Documents</span>
+          <h2 class="section-title" id="docs-title">Conseils &amp; PV</h2>
+          <p class="section-subtitle">Comptes-rendus et procès-verbaux des séances</p>
+          <div class="doc-list">
+            <a href="https://mairiedelepin.fr/categorie/conseil-municipal/" target="_blank" rel="noopener" class="doc-item">
+              <div class="doc-icon">📄</div>
+              <div class="doc-info">
+                <div class="doc-title">Conseil Municipal — 2025</div>
+                <div class="doc-meta">Procès-verbaux et délibérations</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="https://mairiedelepin.fr/categorie/conseil-municipal/" target="_blank" rel="noopener" class="doc-item">
+              <div class="doc-icon">📄</div>
+              <div class="doc-info">
+                <div class="doc-title">Conseil Municipal — 2024</div>
+                <div class="doc-meta">Procès-verbaux et délibérations</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">💰</div>
+              <div class="doc-info">
+                <div class="doc-title">Budget Communal</div>
+                <div class="doc-meta">Documents budgétaires officiels</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">📋</div>
+              <div class="doc-info">
+                <div class="doc-title">Guide Tarifs Municipaux</div>
+                <div class="doc-meta">Tarifs des services communaux</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="tag">Réglementation</span>
+          <h2 class="section-title">Arrêtés &amp; Urbanisme</h2>
+          <p class="section-subtitle">Arrêtés municipaux et documents d'urbanisme</p>
+          <div class="doc-list">
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">⚖️</div>
+              <div class="doc-info">
+                <div class="doc-title">Arrêtés Permanents</div>
+                <div class="doc-meta">Règlements en vigueur</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">⚖️</div>
+              <div class="doc-info">
+                <div class="doc-title">Arrêtés Provisoires</div>
+                <div class="doc-meta">Mesures temporaires</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">🗺️</div>
+              <div class="doc-info">
+                <div class="doc-title">PLU / Urbanisme</div>
+                <div class="doc-meta">Plan Local d'Urbanisme, révisions</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+            <a href="contact.html" class="doc-item">
+              <div class="doc-icon">🏢</div>
+              <div class="doc-info">
+                <div class="doc-title">Location Salle &amp; Matériel</div>
+                <div class="doc-meta">Réservation salle des fêtes</div>
+              </div>
+              <div class="doc-arrow">→</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES MUNICIPAUX -->
+  <section class="section-alt" aria-labelledby="services-title">
+    <div class="container">
+      <span class="tag">Services</span>
+      <h2 class="section-title" id="services-title">Services municipaux</h2>
+      <p class="section-subtitle">Tout ce que la commune met à votre disposition</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1.25rem; margin-top:2.5rem;">
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">📱</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">Application PanneauPocket</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Recevez les informations de la commune directement sur votre téléphone</div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">💻</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">Ateliers Numériques</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Permanences numériques CCPMF pour vous accompagner dans vos démarches en ligne</div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">⚡</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">La Fibre Optique</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Informations sur le déploiement de la fibre optique sur la commune</div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">🕯️</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">Cimetière Communal</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Informations, tarifs et démarches liés au cimetière communal</div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">🏘️</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">Communauté de Communes</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Le Pin fait partie de la Communauté de Communes du Pays de Meaux Flandre</div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-white); border-radius:var(--radius-lg); padding:1.5rem; box-shadow:var(--color-card-shadow); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">📰</div>
+          <div>
+            <div style="font-weight:700; color:var(--color-primary); margin-bottom:0.3rem;">LE PIN Le mag</div>
+            <div style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.5;">Le magazine municipal — retrouvez tous les numéros en ligne</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="footer-logo-img" />
+            <div>
+              <div style="font-size:1rem; font-weight:700;">Mairie de Le Pin</div>
+              <div style="font-size:0.75rem; opacity:0.6; margin-top:2px;">Seine-et-Marne · 77181</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            La commune de Le Pin est une petite ville de Seine-et-Marne en Île-de-France.
+            Retrouvez ici toutes les informations administratives et de vie locale.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener" aria-label="Facebook"><span>f</span></a>
+            <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener" aria-label="Instagram"><span>📷</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="decouvrir.html">Découvrir le village</a></li>
+            <li><a href="mairie.html">La Mairie</a></li>
+            <li><a href="vie-pratique.html">Vie pratique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <a href="contact.html#communeMap" class="footer-map-link">6 rue de Courtry<br>77181 Le Pin</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+33160262209" style="color:rgba(255,255,255,0.65);">01 60 26 22 09</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mairie de Le Pin · Tous droits réservés</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Mentions légales</a>
+          <a href="contact.html">Accessibilité</a>
+          <a href="index.html">Plan du site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
