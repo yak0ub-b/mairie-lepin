@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Transports &amp; Mobilité — Mairie de Le Pin (77)</title>
+  <meta name="description" content="Lignes de bus, Seine-et-Marne Express, transport à la demande et informations mobilité pour Le Pin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .bus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .bus-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--color-card-shadow);
+      padding: 1.5rem;
+      transition: box-shadow var(--transition), transform var(--transition);
+      border: 1px solid var(--color-border);
+    }
+    .bus-card:hover {
+      box-shadow: var(--color-card-shadow-hover);
+      transform: translateY(-2px);
+    }
+    .bus-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .bus-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3rem;
+      height: 3rem;
+      border-radius: var(--radius);
+      background: var(--color-primary);
+      color: var(--color-white);
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+    .bus-card-meta {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-top: 0.25rem;
+    }
+    .bus-card-route {
+      font-size: 0.875rem;
+      color: var(--color-text);
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .bus-card-route svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--color-accent);
+    }
+    .contact-info-box {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--color-card-shadow);
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      border-left: 4px solid var(--color-accent);
+    }
+    .contact-info-box .ci-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .contact-info-box .ci-item svg { color: var(--color-accent); flex-shrink: 0; }
+    .contact-info-box .ci-item strong { color: var(--color-text); }
+    .express-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .express-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--color-card-shadow);
+      padding: 1.5rem;
+      border: 1px solid var(--color-border);
+    }
+    .express-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .express-card h3 svg { color: var(--color-accent); }
+    .express-card p,
+    .express-card ul li {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+    .express-card ul { padding-left: 0; }
+    .express-card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+    .express-card ul li::before {
+      content: "–";
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+    .external-links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 480px) {
+      .contact-info-box { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="brand-logo-img" />
+        <div>
+          <div class="brand-text-main">Mairie de Le Pin</div>
+          <div class="brand-text-sub">Seine-et-Marne • 77181</div>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="decouvrir.html">Découvrir</a></li>
+        <li><a href="mairie.html">La Mairie</a></li>
+        <li><a href="vie-pratique.html" class="active">Vie pratique</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Accueil</a>
+    <a href="decouvrir.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 5.5-8 5.5"/></svg> Découvrir le village</a>
+    <a href="mairie.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="10" width="18" height="12" rx="1"/><path d="M3 10l9-7 9 7"/><line x1="9" y1="22" x2="9" y2="14"/><line x1="15" y1="22" x2="15" y2="14"/><rect x="9" y="14" width="6" height="8"/></svg> La Mairie</a>
+    <a href="vie-pratique.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1" ry="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg> Vie pratique</a>
+    <a href="contact.html" style="display:flex;align-items:center;gap:0.55rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg> Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-hero-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <a href="vie-pratique.html">Vie pratique</a>
+        <span>›</span>
+        <span>Transports &amp; Mobilité</span>
+      </nav>
+      <h1>Transports &amp; Mobilité</h1>
+      <p>Lignes de bus, réseau express, covoiturage et solutions de mobilité pour les habitants de Le Pin</p>
+    </div>
+  </div>
+
+  <!-- LIGNES DE BUS -->
+  <section aria-labelledby="bus-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Transports en commun</span>
+        <h2 class="section-title" id="bus-title">Lignes de bus</h2>
+        <p class="section-subtitle">Quatre lignes de bus desservent la commune de Le Pin, opérées par Transdev et Keolis-CIF.</p>
+      </div>
+
+      <div class="bus-grid">
+
+        <!-- Ligne 4 -->
+        <div class="bus-card">
+          <div class="bus-card-header">
+            <div class="bus-badge">4</div>
+            <div>
+              <div style="font-weight:700; color:var(--color-primary); font-size:0.95rem;">Ligne 4</div>
+              <div class="bus-card-meta">Transdev</div>
+            </div>
+          </div>
+          <div class="bus-card-route">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Gare routière Chelles ↔ Mairie Claye-Souilly</span>
+          </div>
+        </div>
+
+        <!-- Ligne 5 -->
+        <div class="bus-card">
+          <div class="bus-card-header">
+            <div class="bus-badge">5</div>
+            <div>
+              <div style="font-weight:700; color:var(--color-primary); font-size:0.95rem;">Ligne 5</div>
+              <div class="bus-card-meta">Transdev</div>
+            </div>
+          </div>
+          <div class="bus-card-route">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Rond-point Sciences Chelles ↔ Gare Lagny-Thorigny</span>
+          </div>
+        </div>
+
+        <!-- Ligne 4s -->
+        <div class="bus-card">
+          <div class="bus-card-header">
+            <div class="bus-badge" style="font-size:0.95rem;">4s</div>
+            <div>
+              <div style="font-weight:700; color:var(--color-primary); font-size:0.95rem;">Ligne 4s</div>
+              <div class="bus-card-meta">Transdev · Scolaire</div>
+            </div>
+          </div>
+          <div class="bus-card-route">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Complexe scolaire Chelles ↔ Mairie Claye-Souilly</span>
+          </div>
+        </div>
+
+        <!-- Ligne 19 -->
+        <div class="bus-card">
+          <div class="bus-card-header">
+            <div class="bus-badge">19</div>
+            <div>
+              <div style="font-weight:700; color:var(--color-primary); font-size:0.95rem;">Ligne 19</div>
+              <div class="bus-card-meta">Keolis-CIF</div>
+            </div>
+          </div>
+          <div class="bus-card-route">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Gare Villeparisis/Mitry-le-Neuf ↔ <strong>Le Pin (terminus)</strong></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Transdev -->
+      <div class="contact-info-box" aria-label="Contact Transdev">
+        <div class="ci-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8l5-5v13l-5-5v-3z"/></svg>
+          <span><strong>Transdev</strong> — 75 av. Gustave Nast, Chelles</span>
+        </div>
+        <div class="ci-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+33164218990" style="color:var(--color-accent); font-weight:600;">01 64 21 89 90</a>
+        </div>
+        <div class="ci-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Lun–Ven · 7h00–19h30</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEINE-ET-MARNE EXPRESS & COVOITURAGE -->
+  <section class="section-alt" aria-labelledby="express-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Réseau express</span>
+        <h2 class="section-title" id="express-title">Seine-et-Marne Express &amp; Covoiturage</h2>
+        <p class="section-subtitle">Connexions régionales, covoiturage et transports à la demande depuis Le Pin</p>
+      </div>
+
+      <div class="express-grid">
+
+        <div class="express-card">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8l5-5v13l-5-5v-3z"/></svg>
+            Seine-et-Marne Express · Ligne 19
+          </h3>
+          <p style="margin-bottom:0.75rem;">Arrêt <strong>« Le Pin Courtry »</strong> — RD34</p>
+          <ul>
+            <li>Gare RER A Torcy</li>
+            <li>Aéroport Roissy-CDG (Terminal 3)</li>
+          </ul>
+        </div>
+
+        <div class="express-card">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            Covoiturage &amp; Stationnement
+          </h3>
+          <ul>
+            <li>Aire de covoiturage à l'arrêt Le Pin Courtry</li>
+            <li>Parking vélos sécurisé disponible</li>
+          </ul>
+        </div>
+
+        <div class="express-card">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            Application &amp; TAD
+          </h3>
+          <p style="margin-bottom:0.5rem;">L'application <strong>Transdev</strong> permet de consulter les horaires en temps réel.</p>
+          <p>Le <strong>transport à la demande</strong> est disponible pour les habitants de Le Pin.</p>
+        </div>
+
+      </div>
+
+      <!-- Liens externes -->
+      <div class="external-links-row">
+        <a href="https://www.transilien.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.875rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Horaires Transilien →
+        </a>
+        <a href="https://bouger-les-lignes.fr" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.875rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Réseau bus Seine-et-Marne →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="https://mairiedelepin.fr/wp-content/themes/mairielepin/images/logo-lepin.png" alt="Écusson Mairie de Le Pin" class="footer-logo-img" />
+            <div>
+              <div style="font-size:1rem; font-weight:700;">Mairie de Le Pin</div>
+              <div style="font-size:0.75rem; opacity:0.6; margin-top:2px;">Seine-et-Marne · 77181</div>
+            </div>
+          </div>
+          <p class="footer-desc">La commune de Le Pin, 1 642 habitants en Seine-et-Marne, Île-de-France.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/mairiedelepin" target="_blank" rel="noopener" aria-label="Facebook"><span>f</span></a>
+            <a href="https://www.instagram.com/mairiedulepin77/" target="_blank" rel="noopener" aria-label="Instagram"><span>📷</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="decouvrir.html">Découvrir le village</a></li>
+            <li><a href="mairie.html">La Mairie</a></li>
+            <li><a href="vie-pratique.html">Vie pratique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem;">Services</h4>
+          <ul>
+            <li><a href="demarches.html">Démarches administratives</a></li>
+            <li><a href="enfance.html">École &amp; Enfance</a></li>
+            <li><a href="sante.html">Santé</a></li>
+            <li><a href="transports.html" aria-current="page">Transports</a></li>
+            <li><a href="loisirs.html">Loisirs &amp; Associations</a></li>
+            <li><a href="seniors.html">Seniors &amp; Solidarité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg><a href="contact.html" class="footer-map-link">6 rue de Courtry<br>77181 Le Pin</a></div>
+          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.59 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.56a16 16 0 006.53 6.53l1.63-1.63a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+33160262209" style="color:rgba(255,255,255,0.65);">01 60 26 22 09</a></div>
+          <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Lun–Ven · 9h00–12h00</span></div>
+          <h4 style="margin-top:1.5rem;">La Mairie</h4>
+          <ul>
+            <li><a href="arretes.html">Arrêtés municipaux</a></li>
+            <li><a href="urbanisme.html">PLU &amp; Urbanisme</a></li>
+            <li><a href="magazines.html">LE PIN Le mag</a></li>
+            <li><a href="location-salle.html">Location de salles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mairie de Le Pin · Tous droits réservés</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Mentions légales</a>
+          <a href="contact.html">Accessibilité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
