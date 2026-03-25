@@ -1390,3 +1390,105 @@ a.hero-eyebrow:hover {
   #communeMap { height: 320px; }
   .map-outer { padding: 0 1rem; }
 }
+
+/* ============================================================
+   RESPONSIVE MOBILE — Améliorations complètes
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Hero */
+  .hero { min-height: 440px; }
+  .hero-content { padding: 2.75rem 0; max-width: 100%; }
+  .hero-overlay {
+    background: linear-gradient(to bottom, rgba(8,3,1,0.62) 0%, rgba(8,3,1,0.38) 50%, rgba(8,3,1,0.55) 100%);
+  }
+  .hero-desc { font-size: 1rem; margin-bottom: 1.5rem; max-width: 100%; }
+
+  /* Page hero */
+  .page-hero { padding: 2.5rem 0; }
+
+  /* Sections */
+  section { padding: 3rem 0; }
+
+  /* Events */
+  .event-item { gap: 1rem; }
+
+  /* Contact cards */
+  .contact-info-card,
+  .contact-form-card { padding: 1.75rem 1.5rem; }
+
+  /* Vitrine */
+  .vitrine { padding: 3rem 0; }
+
+  /* Parallax band */
+  .parallax-band { height: 160px; }
+  .parallax-band-text { font-size: clamp(0.85rem, 3.5vw, 1.3rem); }
+}
+
+@media (max-width: 480px) {
+  /* Base */
+  section { padding: 2.5rem 0; }
+  .container { padding: 0 1rem; }
+
+  /* Hero */
+  .hero { min-height: 380px; }
+  .hero-content { padding: 2rem 0; }
+  .hero-eyebrow { font-size: 0.7rem; padding: 0.28rem 0.7rem; }
+
+  /* Page hero */
+  .page-hero { padding: 1.75rem 0; }
+  .page-hero p { font-size: 0.95rem; }
+
+  /* Contact form — prénom + nom empilés */
+  .contact-form-card div[style*="grid-template-columns:1fr 1fr"],
+  .contact-form-card div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact cards */
+  .contact-info-card,
+  .contact-form-card { padding: 1.25rem; }
+
+  /* Events */
+  .event-item { gap: 0.75rem; padding: 0.9rem 1rem; }
+  .event-arrow { display: none; }
+
+  /* Footer */
+  .footer { padding-top: 2.5rem; }
+  .footer-grid { gap: 1.5rem; padding-bottom: 2rem; }
+  .footer-desc { max-width: 100%; }
+
+  /* Vitrine */
+  .vitrine { padding: 2.5rem 0; }
+  .vitrine-stat { padding: 1.25rem 0.75rem; }
+  .vitrine-stat-num { font-size: 2rem; }
+
+  /* Info bar */
+  .info-bar-icon { width: 36px; height: 36px; font-size: 1rem; }
+
+  /* Search form */
+  .search-form { gap: 0.35rem; }
+  .search-result-page { display: none; }
+}
+
+@media (max-width: 360px) {
+  /* Navbar */
+  .brand-text-sub { display: none; }
+
+  /* Hero */
+  .hero { min-height: 360px; }
+
+  /* Quick cards */
+  .quick-card { padding: 1.25rem 0.75rem; }
+  .quick-card-label { font-size: 0.78rem; }
+
+  /* Events */
+  .event-date-box { min-width: 50px; padding: 0.5rem 0.6rem; }
+  .event-date-day { font-size: 1.3rem; }
+
+  /* Stat cards */
+  .stat-number { font-size: 2rem; }
+
+  /* Fix overflow: grilles minmax(280px) sur écrans ~320px */
+  div[style*="minmax(280px"] { grid-template-columns: 1fr !important; }
+}
